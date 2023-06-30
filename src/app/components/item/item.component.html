@@ -1,7 +1,7 @@
-<div class="row ">
+<div class="row " [ngClass]="{'complete':item.complete}">
     
     <div class="title">
-        <input type="checkbox" [checked]="item.complete">
+        <input type="checkbox" [checked]="item.complete" (change)="onToggle(item)">
         {{item.title}}
     </div>
     <div class="price">

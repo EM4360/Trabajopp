@@ -6,6 +6,10 @@ div{
     padding: 5px 0 ;
 }
 
+.complete{
+    text-decoration: line-through;
+}
+
 .tittle{
     display: flex;
     width: 50%;

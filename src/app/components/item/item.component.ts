@@ -10,6 +10,9 @@ export class ItemComponent {
 onDelete(item: item){
  this.deleteItem.emit(item)
 }
+onToggle(item: item){
+  item.complete =! item.complete
+}
 
 @Input() item: item = new item(); 
 @Output() deleteItem: EventEmitter<item> = new EventEmitter()
