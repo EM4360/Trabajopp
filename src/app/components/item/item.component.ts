@@ -7,14 +7,18 @@ import {item} from "../../models/item"
   styleUrls: ['./item.component.css']
 })
 export class ItemComponent {
+  
 onDelete(item: item){
  this.deleteItem.emit(item)
 }
 onToggle(item: item){
   item.complete =! item.complete
+  this.toggleItem. emit(item);
 }
 
 @Input() item: item = new item(); 
 @Output() deleteItem: EventEmitter<item> = new EventEmitter()
+@Output() toggleItem: EventEmitter<item> = new EventEmitter()
+
 };
 
