@@ -1,6 +1,4 @@
 <div>
-    <div *ngFor="let items of items">
-        {{items.title}}
-
-    </div>
+    <app-item *ngFor="let items of items" [item]="items">
+    </app-item>
 </div>
