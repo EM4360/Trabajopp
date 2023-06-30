@@ -16,7 +16,7 @@ items : item[] = [
    },
    {
     id: 1,
-    title: "pan",
+    title: "pan   ",
     price: 3.5,
     quantity:8,
     complete: true
@@ -29,6 +29,9 @@ items : item[] = [
     complete: true
    }
 ];
+deleteItem(item: item){
+  this.items = this.items.filter(x => x.id !== item.id)
+}
 
 }
 

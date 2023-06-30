@@ -1,11 +1,17 @@
-import { Component, Input} from '@angular/core';
+import { Component, Input, Output,EventEmitter} from '@angular/core';
 import {item} from "../../models/item"
+
 @Component({
   selector: 'app-item',
   templateUrl: './item.component.html',
   styleUrls: ['./item.component.css']
 })
 export class ItemComponent {
-@Input() item: item = new item(); 
-
+onDelete(item: item){
+ this.deleteItem.emit(item)
 }
+
+@Input() item: item = new item(); 
+@Output() deleteItem: EventEmitter<item> = new EventEmitter()
+};
+
