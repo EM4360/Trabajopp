@@ -7,8 +7,12 @@ div{
 }
 
 .complete{
+    color: #ccc;
     text-decoration: line-through;
 }
+.complete .total{
+    color: #ccc;
+} 
 
 .tittle{
     display: flex;

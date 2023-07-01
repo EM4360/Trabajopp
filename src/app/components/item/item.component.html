@@ -1,4 +1,4 @@
-<div class="row" [ngClass]="{'completed': item.complete}">
+<div class="row" [ngClass]="{'complete': item.complete}">
     <div class="title">
       <input type="checkbox" [checked] = "item.complete" (change)="onToggle(item)">
       {{item.title}}
