@@ -1,9 +1,10 @@
 .row{
     display: flex;
     box-sizing: border-box;
+
 }
 div{
-    padding: 5px 0 ;
+    padding: 10px 0;
 }
 
 .complete{
@@ -16,12 +17,13 @@ div{
 
 .tittle{
     display: flex;
-    width: 50%;
+    width: 15%;
     padding: 0 5px;
 }
 .price{
-    width: 15%;
-    padding:  5px;
+    width: 50%;
+    padding:  10px;
+    text-align: center;
 
 }
 .quantity{

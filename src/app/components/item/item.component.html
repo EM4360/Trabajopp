@@ -1,4 +1,5 @@
 <div class="row" [ngClass]="{'complete': item.complete}">
+    
     <div class="title">
       <input type="checkbox" [checked] = "item.complete" (change)="onToggle(item)">
       {{item.title}}
@@ -19,4 +20,5 @@
     <div class="actions">
       <button (click)="onDelete(item)">Eliminar</button>
     </div>
-  </div>
+
+</div>
